@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  column-gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: getColor('primary-icon');
+  background-color: inherit;
+
+  transition: fill 250ms $animation-timing-function,
+    background-color 250ms $animation-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: getColor('primary-light-text');
+    background-color: getColor('primary-active');
+    outline: none;
+  }
+
+  &--footer-colors {
+    fill: getColor('primary-light-text');
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

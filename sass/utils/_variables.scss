@@ -1,0 +1,28 @@
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$colors: (
+  'primary-text': #212121,
+  'primary-light-text': #ffffff,
+  'secondary-text': #757575,
+
+  'primary-background': #ffffff,
+  'secondary-background': #f5f4fa,
+  'footer-background': #2f303a,
+
+  'primary-active': #2196f3,
+  'secondary-active': #188ce8,
+
+  'primary-icon': #afb1b8,
+
+  'primary-button-text': #ffffff,
+
+  'primary-logo': #2196f3,
+  'dark-logo': #000000,
+  'light-logo': #ffffff,
+
+  'page-header__border': #ececec,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

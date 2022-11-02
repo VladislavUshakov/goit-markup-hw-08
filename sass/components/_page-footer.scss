@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: getColor('footer-background');
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer__content {
+  padding-top: 12px;
+
+  &--padding-none {
+    padding-top: 0;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.page-footer__subtitle {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor('primary-light-text');
+}
