@@ -11,7 +11,7 @@
 
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .checkbox__orig {
@@ -40,14 +40,12 @@
 }
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
 
   color: getColor('secondary-text');
 }
 
 .checkbox__link {
-  margin-left: 4px;
-
   color: getColor('primary-active');
 }

@@ -1,9 +1,79 @@
 .socials {
   display: flex;
   column-gap: 10px;
+
+  justify-content: center;
+
+  &--start {
+    justify-content: start;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+
+  &--border {
+    height: 22px;
+
+    &:not(:last-child)::after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 100%;
+      margin-left: 10px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
 }
 
 .socials__link {
+  &:focus {
+    outline: transparent;
+  }
+
+  &:hover .socials__wrap,
+  &:focus .socials__wrap {
+    color: getColor('primary-light-text');
+    background-color: getColor('primary-active');
+    outline: transparent;
+  }
+
+  &--outline {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    transition: color 250ms $animation-timing-function;
+
+    &:focus {
+      outline: auto;
+    }
+
+    &:hover .socials__label,
+    &:focus .socials__label {
+      color: getColor('secondary-active');
+    }
+  }
+}
+
+.socials__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+
+  color: getColor('primary-active');
+
+  transition: color 250ms $animation-timing-function;
+}
+
+.socials__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,21 +82,18 @@
   height: 44px;
   border-radius: 50%;
 
-  fill: getColor('primary-icon');
+  color: getColor('primary-icon');
   background-color: inherit;
 
-  transition: fill 250ms $animation-timing-function,
+  transition: color 250ms $animation-timing-function,
     background-color 250ms $animation-timing-function;
 
-  &:hover,
-  &:focus {
-    fill: getColor('primary-light-text');
-    background-color: getColor('primary-active');
-    outline: none;
-  }
-
   &--footer-colors {
-    fill: getColor('primary-light-text');
+    color: getColor('primary-light-text');
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+.socials__icon {
+  fill: currentColor;
 }
