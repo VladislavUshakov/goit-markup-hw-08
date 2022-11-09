@@ -698,6 +698,7 @@
               type="email"
               placeholder="E-mail"
               id="email"
+              required
             />
             <button class="subscribe-form__button button" type="submit">
               Підписатися
@@ -723,7 +724,7 @@
 
           <label for="lead-name" class="lead-form__label">Ім'я</label>
           <div class="lead-form__wrap">
-            <input type="text" id="lead-name" name="lead-name" class="lead-form__field" />
+            <input type="text" id="lead-name" name="lead-name" class="lead-form__field" required />
             <svg class="lead-form__icon" width="18" height="18">
               <use href="./images/sprite.svg#name"></use>
             </svg>
@@ -731,7 +732,7 @@
 
           <label for="lead-tel" class="lead-form__label">Телефон</label>
           <div class="lead-form__wrap">
-            <input type="tel" id="lead-tel" name="lead-tel" class="lead-form__field" />
+            <input type="tel" id="lead-tel" name="lead-tel" class="lead-form__field" required />
             <svg class="lead-form__icon" width="18" height="18">
               <use href="./images/sprite.svg#tel"></use>
             </svg>
@@ -739,7 +740,13 @@
 
           <label for="lead-email" class="lead-form__label">Пошта</label>
           <div class="lead-form__wrap">
-            <input type="email" id="lead-email" name="lead-email" class="lead-form__field" />
+            <input
+              type="email"
+              id="lead-email"
+              name="lead-email"
+              class="lead-form__field"
+              required
+            />
             <svg class="lead-form__icon" width="18" height="18">
               <use href="./images/sprite.svg#email"></use>
             </svg>
@@ -760,6 +767,7 @@
                 name="agree"
                 id="agree"
                 class="checkbox__orig visually-hidden"
+                required
               />
               <svg class="checkbox__icon checkbox__icon--empty" width="16" height="15">
                 <use href="./images/sprite.svg#checkbox-empty"></use>
