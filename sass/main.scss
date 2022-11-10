@@ -1,5 +1,5 @@
 @import './utils/variables';
-@import './utils/base';
+@import './base/reset';
 @import './utils/placeholders';
 
 @import './components/visually-hidden';
@@ -12,27 +12,21 @@
 @import './components/title';
 @import './components/socials';
 @import './components/checkbox';
-
-@import './components/page-header';
 @import './components/navigation';
 @import './components/contacts';
-
-@import './components/hero';
-
-@import './components/quality';
-
-@import './components/job';
-
-@import './components/team';
 @import './components/teammate';
+@import './components/address';
+@import './components/subscribe-form';
 
-@import './components/clients';
+@import './layout/page-header';
+@import './layout/page-footer';
 
-@import './components/portfolio';
+@import './layout/hero';
+@import './layout/quality';
+@import './layout/job';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
 
 @import './components/modal';
 @import './components/lead-form';
-
-@import './components/page-footer';
-@import './components/address';
-@import './components/subscribe-form';
